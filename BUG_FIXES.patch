@@ -1,0 +1,42 @@
+--- a/task1_dpo/dpo.py
++++ b/task1_dpo/dpo.py
+@@ -30,7 +30,7 @@
+     # Starter implementation:
+     # students must validate the objective carefully.
+     logits = beta * (
+-        policy_margin + ref_margin
++        policy_margin - ref_margin
+     )
+ 
+     loss = -F.logsigmoid(
+--- a/task2_ppo/ppo.py
++++ b/task2_ppo/ppo.py
+@@ -53,7 +53,7 @@
+     surr2 = ratio.clamp(1.0 - eps, 1.0 + eps) * advantage
+ 
+     # Starter implementation: students must validate the clipping geometry carefully.
+-    objective = torch.maximum(surr1, surr2)
++    objective = torch.minimum(surr1, surr2)
+ 
+     loss = -masked_mean(objective, mask)
+     affected = ((ratio < (1.0 - eps)) | (ratio > (1.0 + eps))).float()
+--- a/task3_grpo/grpo.py
++++ b/task3_grpo/grpo.py
+@@ -12,9 +12,14 @@
+     Validate this implementation against the group-relative definition in the assignment manual.
+     """
+     # Starter implementation: students must validate the grouping logic carefully.
+-    mean = rewards.mean()
+-    std = rewards.std(unbiased=False).clamp_min(eps)
+-    return (rewards - mean) / std
++    advantages = torch.zeros_like(rewards)
++    for group_id in torch.unique(group_ids):
++        members = group_ids == group_id
++        group_rewards = rewards[members]
++        mean = group_rewards.mean()
++        std = group_rewards.std(unbiased=False)
++        advantages[members] = (group_rewards - mean) / (std + eps)
++    return advantages
+ 
+ 
+ def grpo_policy_loss(

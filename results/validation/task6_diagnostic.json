@@ -1,0 +1,126 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "evidence": [
+    {
+      "task": "task1_dpo",
+      "condition": "standard",
+      "status": "not run"
+    },
+    {
+      "task": "task1_dpo",
+      "condition": "beta_0.03",
+      "status": "not run"
+    },
+    {
+      "task": "task1_dpo",
+      "condition": "beta_0.10",
+      "status": "not run"
+    },
+    {
+      "task": "task1_dpo",
+      "condition": "beta_0.30",
+      "status": "not run"
+    },
+    {
+      "task": "task1_dpo",
+      "condition": "standard_length",
+      "status": "not run"
+    },
+    {
+      "task": "task1_dpo",
+      "condition": "balanced_length",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "standard",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "clip_0.05",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "clip_0.20",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "clip_0.50",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "kl_0.00",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "kl_0.10",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "kl_0.20",
+      "status": "not run"
+    },
+    {
+      "task": "task3_grpo",
+      "condition": "standard",
+      "status": "not run"
+    },
+    {
+      "task": "task3_grpo",
+      "condition": "normalization_grpo",
+      "status": "not run"
+    },
+    {
+      "task": "task3_grpo",
+      "condition": "normalization_dr_grpo",
+      "status": "not run"
+    },
+    {
+      "task": "task4_safety",
+      "condition": ".",
+      "status": "not run"
+    },
+    {
+      "task": "task5_feedback",
+      "condition": "gsm",
+      "status": "not run"
+    },
+    {
+      "task": "task5_feedback",
+      "condition": "transfer",
+      "status": "not run"
+    },
+    {
+      "task": "task5_feedback",
+      "condition": "diagnostics",
+      "status": "not run"
+    },
+    {
+      "task": "task2_ppo",
+      "condition": "cached_clipping.json",
+      "status": "not run"
+    },
+    {
+      "task": "task3_grpo",
+      "condition": "group_size.json",
+      "status": "saved"
+    },
+    {
+      "task": "task5_feedback",
+      "condition": "comparison.json",
+      "status": "not run"
+    },
+    {
+      "task": "task4_safety",
+      "condition": "audit_metrics.json",
+      "status": "not run"
+    }
+  ],
+  "compute": []
+}

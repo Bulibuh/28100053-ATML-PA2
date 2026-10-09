@@ -1,0 +1,24 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "aggregation_fixture": {
+    "n": 4,
+    "safe_n": 2,
+    "unsafe_n": 2,
+    "safe_answer_rate": 0.5,
+    "safe_over_refusal_rate": 0.5,
+    "unsafe_compliance_rate": 0.0,
+    "justified_refusal_rate": 0.5,
+    "ambiguous_rate": 0.25,
+    "label_counts": {
+      "SAFE_ANSWER": 1,
+      "OVER_REFUSAL": 1,
+      "JUSTIFIED_REFUSAL": 1,
+      "AMBIGUOUS": 1
+    },
+    "response_length_mean": 10.0,
+    "response_length_std": 0.0,
+    "response_length_q25": 10.0,
+    "response_length_q75": 10.0
+  },
+  "manual_audit_status": "Human labels not supplied; no agreement result is fabricated."
+}

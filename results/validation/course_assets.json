@@ -1,0 +1,453 @@
+{
+  "repository": "AbDu11aHHH/ATML-PA2-assets",
+  "revision": "0b350481fb03f5525a35bcdec4131bd4fe487f98",
+  "complete": false,
+  "verified_files": [
+    {
+      "path": "cached/grpo_k_cache.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "f097d248fb33a0b956da8ddea6dcb8160985f9b6",
+      "bytes": 360072
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_metadata.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4d62de07b7d1dea4e563a2ee599f8049f0ba5a34",
+      "bytes": 308
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/README.md",
+      "algorithm": "git-blob-sha1",
+      "digest": "3db1ebed0348c3b97c391e3b120d0e7e9f103d2a",
+      "bytes": 5219
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/adapter_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "d1a6e4bb3efa503e8aed69c9cf7446e95f443791",
+      "bytes": 860
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/README.md",
+      "algorithm": "git-blob-sha1",
+      "digest": "3db1ebed0348c3b97c391e3b120d0e7e9f103d2a",
+      "bytes": 5219
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/adapter_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "d1a6e4bb3efa503e8aed69c9cf7446e95f443791",
+      "bytes": 860
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/grpo_midpoint_policy_v3_masked512/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_acceptance.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "906e3388c0ae57151129f2ac977548360bf79ac7",
+      "bytes": 1061
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/README.md",
+      "algorithm": "git-blob-sha1",
+      "digest": "c84a3b6b1daeead5fe566b7ab9f05e81826e3d01",
+      "bytes": 5206
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/adapter_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "d1a6e4bb3efa503e8aed69c9cf7446e95f443791",
+      "bytes": 860
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_policy/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "816b7242915f25d74362ec446250be4eae27ce58",
+      "bytes": 1346
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/ppo_midpoint_value/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "checkpoints/rlaif_metadata.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "6685d20621132c634471ee13a444719643bc118b",
+      "bytes": 519
+    },
+    {
+      "path": "checkpoints/rlaif_policy/README.md",
+      "algorithm": "git-blob-sha1",
+      "digest": "3db1ebed0348c3b97c391e3b120d0e7e9f103d2a",
+      "bytes": 5219
+    },
+    {
+      "path": "checkpoints/rlaif_policy/adapter_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "d1a6e4bb3efa503e8aed69c9cf7446e95f443791",
+      "bytes": 860
+    },
+    {
+      "path": "checkpoints/rlaif_policy/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/rlaif_policy/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/rlaif_policy/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/rlaif_policy/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/rlaif_policy/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/rlaif_policy/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "checkpoints/rlvr_metadata.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "9f648d04c4ab767238fe5d5a20f54b2cdd7cd6a2",
+      "bytes": 399
+    },
+    {
+      "path": "checkpoints/rlvr_policy/README.md",
+      "algorithm": "git-blob-sha1",
+      "digest": "3db1ebed0348c3b97c391e3b120d0e7e9f103d2a",
+      "bytes": 5219
+    },
+    {
+      "path": "checkpoints/rlvr_policy/adapter_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "d1a6e4bb3efa503e8aed69c9cf7446e95f443791",
+      "bytes": 860
+    },
+    {
+      "path": "checkpoints/rlvr_policy/added_tokens.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "bytes": 605
+    },
+    {
+      "path": "checkpoints/rlvr_policy/chat_template.jinja",
+      "algorithm": "git-blob-sha1",
+      "digest": "bdf7919a96cfe43d50914a007b9c0877bd0ec27e",
+      "bytes": 2507
+    },
+    {
+      "path": "checkpoints/rlvr_policy/merges.txt",
+      "algorithm": "git-blob-sha1",
+      "digest": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "bytes": 1671853
+    },
+    {
+      "path": "checkpoints/rlvr_policy/special_tokens_map.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "bytes": 613
+    },
+    {
+      "path": "checkpoints/rlvr_policy/tokenizer_config.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "2f66d72a86b5b285412847d226c5643897f67c2d",
+      "bytes": 4712
+    },
+    {
+      "path": "checkpoints/rlvr_policy/vocab.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "bytes": 2776833
+    },
+    {
+      "path": "data/dpo_length_balanced_train.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "d4a633be10928881dedf2d5bbd6da906ff9225ea",
+      "bytes": 5864012
+    },
+    {
+      "path": "data/dpo_length_stratified_eval.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "4983a5817881c484f5627676fcd04c26f4ad47d5",
+      "bytes": 910878
+    },
+    {
+      "path": "data/dpo_standard_eval.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "bf2311c8e3a1dfe3ceb649948e63fe9652cf4a54",
+      "bytes": 1477304
+    },
+    {
+      "path": "data/dpo_standard_train.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "4c01778acdddb709732d3df9e926685e6357d55f",
+      "bytes": 7375116
+    },
+    {
+      "path": "data/gsm8k_eval.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "2998e456c518f75ee1ff5bd0591c07eb317f0553",
+      "bytes": 459231
+    },
+    {
+      "path": "data/gsm8k_rl_train.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "cc1ef0d9e546dde2e4c6961272b287bfc684b76f",
+      "bytes": 2274578
+    },
+    {
+      "path": "data/math_transfer_eval.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "009e071c164bc4fc625aacca9e0650048417258d",
+      "bytes": 63052
+    },
+    {
+      "path": "data/rl_prompt_pool_eval.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "bee2c6718d56b913580abf3edf3466cc51f60691",
+      "bytes": 331356
+    },
+    {
+      "path": "data/rl_prompt_pool_train.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "53da72918335b554f624ff484c24767763b1d5a2",
+      "bytes": 2047517
+    },
+    {
+      "path": "data/task5_controlled_reward_diagnostics.jsonl",
+      "algorithm": "git-blob-sha1",
+      "digest": "fc208df6c8230c4434a7359cc0c556f26cdb9b60",
+      "bytes": 80663
+    },
+    {
+      "path": "data/xstest_safety_prompts.csv",
+      "algorithm": "git-blob-sha1",
+      "digest": "6c8946dc878fa15c47a551b23210b690bd55d37e",
+      "bytes": 43085
+    },
+    {
+      "path": "manifests/posttraining_acceptance_summary.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "a1802de4da5587b16b63b58c3195710a12416286",
+      "bytes": 2644
+    },
+    {
+      "path": "manifests/sha256.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "87716e77c6f435090d079794b8a391f380d49246",
+      "bytes": 10422
+    },
+    {
+      "path": "manifests/source_v2_dpo_length_control_metadata.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "390f748bab431bfd7a2b98506414ac2953eb7c84",
+      "bytes": 280
+    },
+    {
+      "path": "manifests/source_v2_environment.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "47d2cabeb183819c59ba5c974784e7efcedf4474",
+      "bytes": 718
+    },
+    {
+      "path": "manifests/source_v2_release_inventory.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "06913658eb73a7ff7734801d42ad12b6a6b8dbb8",
+      "bytes": 1205
+    },
+    {
+      "path": "manifests/source_v2_reward_model_validation.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "1274356430622dab84e441eba5c63befb4f69044",
+      "bytes": 337
+    },
+    {
+      "path": "manifests/source_v2_sha256.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "54b8a7f226cd0a4d8019970a6263fc3ed61de22e",
+      "bytes": 7590
+    },
+    {
+      "path": "manifests/source_v2_task4_safety_judge_spec.json",
+      "algorithm": "git-blob-sha1",
+      "digest": "ca4eb5f64609528e672969d4a80458b68308fb3e",
+      "bytes": 483
+    }
+  ],
+  "pending_files": [
+    "cached/ppo_rollout.pt",
+    "cached/ppo_rollout_salvage_raw.pt",
+    "checkpoints/grpo_midpoint_policy/adapter_model.safetensors",
+    "checkpoints/grpo_midpoint_policy/tokenizer.json",
+    "checkpoints/grpo_midpoint_policy/training_args.bin",
+    "checkpoints/grpo_midpoint_policy_v3_masked512/adapter_model.safetensors",
+    "checkpoints/grpo_midpoint_policy_v3_masked512/tokenizer.json",
+    "checkpoints/grpo_midpoint_policy_v3_masked512/training_args.bin",
+    "checkpoints/ppo_midpoint_policy/adapter_model.safetensors",
+    "checkpoints/ppo_midpoint_policy/tokenizer.json",
+    "checkpoints/ppo_midpoint_value/model.safetensors",
+    "checkpoints/ppo_midpoint_value/tokenizer.json",
+    "checkpoints/rlaif_policy/adapter_model.safetensors",
+    "checkpoints/rlaif_policy/tokenizer.json",
+    "checkpoints/rlaif_policy/training_args.bin",
+    "checkpoints/rlvr_policy/adapter_model.safetensors",
+    "checkpoints/rlvr_policy/tokenizer.json",
+    "checkpoints/rlvr_policy/training_args.bin"
+  ]
+}

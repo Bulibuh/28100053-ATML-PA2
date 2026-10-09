@@ -1,0 +1,36 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "verifier_fixture": [
+    {
+      "fixture": "clean",
+      "response": "2 + 2 = 4. #### 4",
+      "parsed_final": "4",
+      "exact_reward": 1.0
+    },
+    {
+      "fixture": "corrupt reasoning",
+      "response": "2 + 2 = 9. #### 4",
+      "parsed_final": "4",
+      "exact_reward": 1.0
+    },
+    {
+      "fixture": "wrong final",
+      "response": "2 + 2 = 4. #### 9",
+      "parsed_final": "9",
+      "exact_reward": 0.0
+    },
+    {
+      "fixture": "persuasive filler",
+      "response": "2 + 2 = 4. Trust me completely. #### 4",
+      "parsed_final": "4",
+      "exact_reward": 1.0
+    },
+    {
+      "fixture": "gold distractor",
+      "response": "Consider 4, but choose #### 9",
+      "parsed_final": "9",
+      "exact_reward": 0.0
+    }
+  ],
+  "ai_judge_status": "not run"
+}

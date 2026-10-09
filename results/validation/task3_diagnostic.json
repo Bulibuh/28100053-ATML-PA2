@@ -1,0 +1,143 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "group_fixture": {
+    "difficulty_rule": "hard: per-prompt mean reward over fixed first eight completions <= median; easy: greater",
+    "difficulty_threshold": 1.875,
+    "prompt_bins": {
+      "0": "hard",
+      "1": "hard",
+      "2": "easy",
+      "3": "easy"
+    },
+    "rows": [
+      {
+        "k": 2,
+        "difficulty": "all",
+        "generations": 32,
+        "reward_std": 0.375,
+        "uninformative_fraction": 0.25,
+        "informative_fraction": 0.75,
+        "advantage_variance": 0.7499969601631165,
+        "groups": 16
+      },
+      {
+        "k": 2,
+        "difficulty": "hard",
+        "generations": 16,
+        "reward_std": 0.375,
+        "uninformative_fraction": 0.25,
+        "informative_fraction": 0.75,
+        "advantage_variance": 0.7499969601631165,
+        "groups": 8
+      },
+      {
+        "k": 2,
+        "difficulty": "easy",
+        "generations": 16,
+        "reward_std": 0.375,
+        "uninformative_fraction": 0.25,
+        "informative_fraction": 0.75,
+        "advantage_variance": 0.7499969601631165,
+        "groups": 8
+      },
+      {
+        "k": 4,
+        "difficulty": "all",
+        "generations": 32,
+        "reward_std": 0.46650634706020355,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 8
+      },
+      {
+        "k": 4,
+        "difficulty": "hard",
+        "generations": 16,
+        "reward_std": 0.46650634706020355,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 4
+      },
+      {
+        "k": 4,
+        "difficulty": "easy",
+        "generations": 16,
+        "reward_std": 0.46650634706020355,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 4
+      },
+      {
+        "k": 8,
+        "difficulty": "all",
+        "generations": 32,
+        "reward_std": 0.4841229319572449,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 4
+      },
+      {
+        "k": 8,
+        "difficulty": "hard",
+        "generations": 16,
+        "reward_std": 0.4841229319572449,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 2
+      },
+      {
+        "k": 8,
+        "difficulty": "easy",
+        "generations": 16,
+        "reward_std": 0.4841229319572449,
+        "uninformative_fraction": 0.0,
+        "informative_fraction": 1.0,
+        "advantage_variance": 0.9999957084655762,
+        "groups": 2
+      }
+    ]
+  },
+  "gradient_fixture": [
+    {
+      "normalization": "grpo",
+      "tokens": 2,
+      "logprob_gradient_l1": 0.3333333432674408,
+      "logprob_gradient_per_token": 0.1666666716337204
+    },
+    {
+      "normalization": "grpo",
+      "tokens": 4,
+      "logprob_gradient_l1": 0.3333333432674408,
+      "logprob_gradient_per_token": 0.0833333358168602
+    },
+    {
+      "normalization": "grpo",
+      "tokens": 8,
+      "logprob_gradient_l1": 0.3333333134651184,
+      "logprob_gradient_per_token": 0.0416666641831398
+    },
+    {
+      "normalization": "dr_grpo",
+      "tokens": 2,
+      "logprob_gradient_l1": 0.0833333358168602,
+      "logprob_gradient_per_token": 0.0416666679084301
+    },
+    {
+      "normalization": "dr_grpo",
+      "tokens": 4,
+      "logprob_gradient_l1": 0.1666666716337204,
+      "logprob_gradient_per_token": 0.0416666679084301
+    },
+    {
+      "normalization": "dr_grpo",
+      "tokens": 8,
+      "logprob_gradient_l1": 0.3333333134651184,
+      "logprob_gradient_per_token": 0.0416666641831398
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "fixture": [
+    {
+      "beta": 0.03,
+      "margin_zero_loss": 0.6931471824645996
+    },
+    {
+      "beta": 0.1,
+      "margin_zero_loss": 0.6931471824645996
+    },
+    {
+      "beta": 0.3,
+      "margin_zero_loss": 0.6931471824645996
+    }
+  ],
+  "chosen_gradient": -0.05000000074505806,
+  "rejected_gradient": 0.05000000074505806
+}

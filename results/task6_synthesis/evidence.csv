@@ -1,0 +1,25 @@
+task,condition,status
+task1_dpo,standard,not run
+task1_dpo,beta_0.03,not run
+task1_dpo,beta_0.10,not run
+task1_dpo,beta_0.30,not run
+task1_dpo,standard_length,not run
+task1_dpo,balanced_length,not run
+task2_ppo,standard,not run
+task2_ppo,clip_0.05,not run
+task2_ppo,clip_0.20,not run
+task2_ppo,clip_0.50,not run
+task2_ppo,kl_0.00,not run
+task2_ppo,kl_0.10,not run
+task2_ppo,kl_0.20,not run
+task3_grpo,standard,not run
+task3_grpo,normalization_grpo,not run
+task3_grpo,normalization_dr_grpo,not run
+task4_safety,.,not run
+task5_feedback,gsm,not run
+task5_feedback,transfer,not run
+task5_feedback,diagnostics,not run
+task2_ppo,cached_clipping.json,not run
+task3_grpo,group_size.json,saved
+task5_feedback,comparison.json,not run
+task4_safety,audit_metrics.json,not run

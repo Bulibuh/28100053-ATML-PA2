@@ -1,0 +1,26 @@
+{
+  "kind": "CPU implementation diagnostic; not course empirical evidence",
+  "fixture": [
+    {
+      "epsilon": 0.05,
+      "clipped_surrogate": -0.22500000894069672,
+      "clip_fraction": 1.0,
+      "affected_token_fraction": 1.0,
+      "valid_tokens": 4
+    },
+    {
+      "epsilon": 0.2,
+      "clipped_surrogate": -0.19999998807907104,
+      "clip_fraction": 0.5,
+      "affected_token_fraction": 0.5,
+      "valid_tokens": 4
+    },
+    {
+      "epsilon": 0.5,
+      "clipped_surrogate": -0.19999998807907104,
+      "clip_fraction": 0.0,
+      "affected_token_fraction": 0.0,
+      "valid_tokens": 4
+    }
+  ]
+}

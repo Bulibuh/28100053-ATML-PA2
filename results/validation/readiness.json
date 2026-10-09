@@ -1,0 +1,43 @@
+{
+  "starter_files_verified": 55,
+  "modified_original_files": [
+    "task1_dpo/dpo.py",
+    "task2_ppo/ppo.py",
+    "task3_grpo/grpo.py"
+  ],
+  "pytest": {
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python -m pytest -q"
+  },
+  "notebooks": {
+    "executed": 6,
+    "mode": "CPU diagnostics + fixed-data checks; full model experiments disabled"
+  },
+  "course_assets": {
+    "verified_non_lfs_files": 71,
+    "complete": false,
+    "blocked_host": "us.aws.cdn.hf.co"
+  },
+  "real_data_checks": {
+    "grpo_cached_completions": 192,
+    "grpo_k_values": [
+      2,
+      4,
+      8
+    ],
+    "verifier_diagnostic_responses": 100
+  },
+  "dpo": {
+    "released_cap": 768,
+    "documented_runtime_override": 4096,
+    "fixed_rows_retained": true,
+    "maximum_prompt_tokens": 3563
+  },
+  "cuda_available": false,
+  "full_training_or_ai_judging_executed": false,
+  "manual_audit_executed": false,
+  "git_commit_created": false,
+  "git_push_performed": false
+}
