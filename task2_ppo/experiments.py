@@ -96,9 +96,25 @@ def cached_generation(row,tok,device):
         sequence=torch.as_tensor(row.get('sequences',row.get('input_ids')),device=device).reshape(1,-1)
         width=sequence.shape[1]-response.shape[1]
     else:
-        messages=prompt_messages(row)
-        if not any(m.get('content') for m in messages):raise ValueError('Cache has no saved prompt/tokens')
-        prompt=tok.apply_chat_template(messages,tokenize=True,add_generation_prompt=True)
+        messages = prompt_messages(row)
+
+        if not any(m.get("content") for m in messages):
+            eval_rows = read_jsonl("data/rl_prompt_pool_eval.jsonl")
+    
+            matches = [
+                p for p in eval_rows
+                if str(p.get("prompt_id")) == str(row.get("prompt_id"))
+                and str(p.get("source_index")) == str(row.get("source_index"))
+            ]
+    
+            if len(matches) != 1:
+                raise ValueError("Could not uniquely match cached prompt")
+    
+            messages = prompt_messages(matches[0])
+    
+        prompt = tok.apply_chat_template(
+            messages, tokenize=True, add_generation_prompt=True
+        )
         sequence=torch.cat([torch.tensor([prompt],device=device),response],dim=1);width=len(prompt)
     if width<1:raise ValueError('Missing cached prompt prefix')
     mask=torch.as_tensor(row.get('response_mask',torch.ones_like(old)),device=device,dtype=torch.float32).reshape(1,-1)
@@ -117,10 +133,11 @@ def analyze_cache(config):
             gen,old=cached_generation(row,tok,device);mask=gen['response_mask']
             ref=torch.as_tensor(row['ref_logprobs'],device=device,dtype=torch.float32).reshape_as(old)
             values=torch.as_tensor(row['values'],device=device,dtype=torch.float32).reshape_as(old) if 'values' in row else response_values(value,gen)
-            reward=next((row[k] for k in ('task_reward','reward','reward_score','rm_reward') if k in row),None)
+            reward=next((row[k] for k in ('effective_terminal_reward','task_reward','reward','reward_score','rm_reward') if k in row),None)
             if reward is None:raise ValueError('Cached rollout has no learned task reward')
             reward=torch.as_tensor(reward,device=device,dtype=torch.float32).reshape(1)
-            if not row.get('terminated_with_eos',True):reward=reward-float(cfg['missing_eos_penalty'])
+            if 'effective_terminal_reward' not in row and not row.get('terminated_with_eos',True):
+                reward=reward-float(cfg['missing_eos_penalty'])
             shaped=shaped_rewards(reward,old,ref,mask,float(cfg['kl_beta']))
             adv,_=compute_gae(shaped,values,mask,float(cfg['gamma']),float(cfg['gae_lambda']))
             new,_=rollout_stats(policy,gen)
