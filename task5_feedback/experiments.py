@@ -47,12 +47,36 @@ def evaluate_dataset(cfg,dataset):
             if meta!=cfg:raise ValueError('Math generation config changed; archive old generations')
             datasets[name]=saved;continue
         set_seed(int(cfg['seed']));model=load_frozen_policy(cfg,name);records=[]
-        for row in rows:
-            gen=batch_generate(model,tok,[prompt_messages(row)],256,int(cfg['math_max_new_tokens']),do_sample=False)
-            response=gen['responses'][0];gold=str(field(row,'gold_final','answer'))
-            records.append({**identity(row),'policy':name,'question':str(field(row,'question','prompt')),'gold_final':gold,
-                            'response':response,'response_tokens':gen['response_lengths'][0],
-                            'exact_reward':exact_reward(response,gold),'format_compliant':extract_designated_final(response) is not None})
+        batch_size = 16
+
+        for start in range(0, len(rows), batch_size):
+            chunk = rows[start:start + batch_size]
+        
+            prompts = [prompt_messages(row) for row in chunk]
+        
+            gen = batch_generate(
+                model,
+                tok,
+                prompts,
+                256,
+                int(cfg['math_max_new_tokens']),
+                do_sample=False
+            )
+        
+            for i, row in enumerate(chunk):
+                response = gen['responses'][i]
+                gold = str(field(row, 'gold_final', 'answer'))
+        
+                records.append({
+                    **identity(row),
+                    'policy': name,
+                    'question': str(field(row, 'question', 'prompt')),
+                    'gold_final': gold,
+                    'response': response,
+                    'response_tokens': gen['response_lengths'][i],
+                    'exact_reward': exact_reward(response, gold),
+                    'format_compliant': extract_designated_final(response) is not None
+                })
         jsonl(target,records);dump(directory/'generation_config.json',cfg);datasets[name]=records
         del model;release_memory()
     # Exact fixed order and IDs are mandatory for every comparison.
