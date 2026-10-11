@@ -33,7 +33,7 @@ def generate(cfg):
     for policy in policy_specs(cfg):
         path=directory/f'generated_{policy}.jsonl'
         if path.exists():raise FileExistsError(f'{path}: archive existing generations to rerun')
-        set_seed(int(cfg['seed']));rows=generate_for_policy(cfg,policy,batch_size=1)
+        set_seed(int(cfg['seed']));rows=generate_for_policy(cfg,policy,batch_size=16)
         jsonl(path,rows);release_memory()
     dump(directory/'generation_config.json',cfg)
 
